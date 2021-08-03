@@ -34,9 +34,17 @@
     */
 
     //Carrega um usuário buscando pelo login e senha
+    /*
     $usuario = new Usuario();
     $usuario->login("Caio","12345");
     echo $usuario;
+    */
+
+    //Insere Usuário e senha
+    $aluno = new Usuario("Junin","play");
+    $aluno->insert();
+    
+    echo $aluno;
 
 
 ?>
