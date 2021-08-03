@@ -41,10 +41,17 @@
     */
 
     //Insere Usuário e senha
+    /*
     $aluno = new Usuario("Junin","play");
     $aluno->insert();
     
     echo $aluno;
+    */
 
+    // Atualizando login e senha de um usuario
+    $usuario = new Usuario();
+    $usuario->loadById(2);
+    $usuario->update("Viana","c4pcpm");
+    echo $usuario;
 
 ?>
