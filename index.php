@@ -49,9 +49,19 @@
     */
 
     // Atualizando login e senha de um usuario
+    /*
     $usuario = new Usuario();
     $usuario->loadById(2);
     $usuario->update("Viana","c4pcpm");
     echo $usuario;
+    */
+
+    // Deletar um usuário
+    $usuario = new Usuario();
+    $usuario->loadById(5);
+    $usuario->delete();
+
+    echo $usuario;
+
 
 ?>
